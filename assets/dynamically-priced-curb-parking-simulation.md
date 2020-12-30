@@ -55,6 +55,14 @@ The chart on the right-top shows that the total travel distance dramatically dro
 
 
 
+## Download 
+
+NetLogo Model: <a href="https://github.com/JingzongWang/JingzongWang.github.io/blob/master/assets/dynamically-priced-curb-parking-simulation.nlogo">dynamically-priced-curb-parking-simulation.nlogo</a>
+
+To run this model, you have to install <a href="https://ccl.northwestern.edu/netlogo/">NetLogo</a>
+
+
+
 ## References
 
 Ghent, Peer. 2015. "Optimizing Performance Objectives for Projects of Congestion Pricing for Parking." *Transportation Research Record: Journal of the Transportation Research Board* 2530: 101‐105.
