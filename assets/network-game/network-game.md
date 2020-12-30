@@ -8,7 +8,7 @@
 
 
 
-![img](../../images/network-game.gif)
+![img](https://github.com/JingzongWang/JingzongWang.github.io/blob/master/images/network-game.gif?raw=true)
 
 White: Human, Black: Machine
 
@@ -27,7 +27,7 @@ A network cannot pass through the same chip twice, even if it is only counted on
 
 A network cannot pass through a chip without turning a corner (i.e. changing direction).
 
-![img](../../images/network-game-play.png)
+![img](https://github.com/JingzongWang/JingzongWang.github.io/blob/master/images/network-game-play.png?raw=true)
 
 
 
@@ -43,7 +43,7 @@ Fout rules of legal play:
 
 eg. In the following diagram, Black is not permitted to place a chip in any of the squares marked with an X.
 
-![img](../../images/network-game-illegal-moves.png)
+![img](https://github.com/JingzongWang/JingzongWang.github.io/blob/master/images/network-game-illegal-moves.png?raw=true)
 
 
 

@@ -17,13 +17,13 @@ block, minimizing the time it takes to find parking and minimizing congestion an
 
 #### About the world
 
-![img](../images/parking-world.png)
+![img](https://github.com/JingzongWang/JingzongWang.github.io/blob/master/images/parking-world.png?raw=true)
 
 The center of this world is the commercial area (green patches) consisting of four blocks, each of which has a job destination and surrounded by 10 curb parking spaces on each side. There are also 160 commuters who are randomly distributed in residential area (yellow patches).  
 
 We can click setup button to setup the world.
 
-![img](../images/parking-setup.gif)
+![img](https://github.com/JingzongWang/JingzongWang.github.io/blob/master/images/parking-setup.gif?raw=true)
 
 
 
@@ -33,7 +33,7 @@ Each day, commuters will try to drive from their own start points at same time t
 
 We can click next_day to run the simulation.
 
-![img](../images/parking-nextday.gif)
+![img](https://github.com/JingzongWang/JingzongWang.github.io/blob/master/images/parking-nextday.gif?raw=true)
 
  
 
@@ -41,7 +41,7 @@ At the end of the simulation for each day, occupancy rates for each side of comm
 
 By clicking keep_going button, we can see the long-term simulation. 
 
-![img](../images/parking-keepgoing.gif)
+![img](https://github.com/JingzongWang/JingzongWang.github.io/blob/master/images/parking-keepgoing.gif?raw=true)
 
 The chart on the right-top shows that the total travel distance dramatically dropped during the first several days and then almostly maintained the same. At the same time, the outer loop parking fee was keeping decreasing while the inner loop parking fee was increasing consistantly. During the whole process, total parking revenue didn't change much. This result indicates that under certain conditions, the dynamic pricing strategy can significantly minimize parking congestion and maintain current parking revenue at the same time. 
 
@@ -57,9 +57,11 @@ The chart on the right-top shows that the total travel distance dramatically dro
 
 ## Download 
 
+Please make sure you have <a href="https://ccl.northwestern.edu/netlogo/">NetLogo</a> installed before run the model
+
 NetLogo Model: <a href="https://github.com/JingzongWang/JingzongWang.github.io/blob/master/assets/dynamically-priced-curb-parking-simulation.nlogo">dynamically-priced-curb-parking-simulation.nlogo</a>
 
-To run this model, you have to install <a href="https://ccl.northwestern.edu/netlogo/">NetLogo</a>
+
 
 
 
