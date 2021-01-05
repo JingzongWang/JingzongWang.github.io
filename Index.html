@@ -7,143 +7,199 @@
         <title>Home-Jingzong Wang Portfolio</title>
         <meta name="description" content="">
         <meta name="author" content="Jingzong Wang">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+        <style>
+            a {
+                opacity: 1;
+                transition: .3s ease;
+                backface-visibility: hidden;
+            }
+            a:hover {
+                opacity: 0.5;
+            }
+
+            * {
+                color:rgb(65, 65, 65);
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .card-text {
+                font-size: 13px;
+            }
+
+            .card {
+                border-radius: 20em;
+            }
+
+            .background {
+                position: fixed;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                top:0;
+                bottom:0;
+                z-index: -100;
+            }
+
+            .links line {
+                stroke: rgb(177, 177, 177);
+                stroke-opacity: 0.4;
+            }
+
+            .nodes circle {
+                stroke: #fff;
+                stroke-width: 1.5px;
+            }
+
+            svg {
+                /* border:1px solid black; */
+                opacity: 0.1;
+            }
+
+            .placeholder {
+                z-index: -200;
+            }
+
+            p.about {
+                line-height: 3em;
+            }
+            
+        </style>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
     </head>
     <body>
-        <main class="py-5 px-5 container">
-            <div class="row pt-lg-5">
-                <header class="col-lg-9 col-md-12 mx-auto">
-                    <p class="mb-5"><a href="">Works</a><span> / </span> <a href="">About</a></p>
-                    <h3> 王敬宗 Jingzong Wang </h3>
-                    <p> Data analyst / Urban Planner / Developer </p>
-                </header>
-            </div>
 
+
+        <main class="pt-5 px-5 container">
+            <div class="row pt-lg-5 pt-5">
+                <header class="col-lg-9 col-md-12 mx-auto">
+                    <h3> Hi there, I am Jingzong Wang 王敬宗  </h3>
+                    <p> Data analyst / Urban Planner / Developer </p>                    
+                </header>
+            </div>          
 
             <div class="album">
                 <div class="row">
                     <div class="col-lg-9 col-md-12 mx-auto">
-                        <h4 class="mt-5 mb-4">PYTHON</h4>
+                        <h4 class="mt-5 mb-4"><b>Machine Learning With Python</b></h4>
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
 
                             <div class="col mb-4">
-                                <div class="card shadow-sm text-black bg-light">
+                                <div class="card shadow text-black bg-light">
                                     <a href="https://www.kaggle.com/jingzongwang/usa-car-accidents-severity-prediction" class="text-reset text-decoration-none"target="_blank">
                                         <img src="./images/car-accidents.png" class="card-img-top" alt="car_accidents.png" width="100%">
-                      
-                                        <div class="card-body">
-                                            <h6 class="card-title">USA Car Accidents Severity Prediction (3.5 million records, kaggle)</h6>
-                                            <p class="card-text fs-6">
-                                                美国交通事故严重性预测 <br> 
-                                                2020-05 <br>
-                                                Skill used: Python, <strong>Sklearn</strong>, Random Forest, Frequency Encoding, One-hot Encoding, Value Imputation, Box Cox Transformation 
-                                            </p>
-                                          
-                                        </div>
                                     </a>
+                                    <div class="card-body">
+                                        <h6 class="card-title"><b>USA Car Accidents Severity Prediction (3.5 million records, kaggle)</b></h6>
+                                        <p class="card-text ">
+                                            美国交通事故严重性预测 <br> 
+                                            2020-05 <br>
+                                            Skill used: Python, <strong>Sklearn</strong>, Random Forest, Frequency Encoding, One-hot Encoding, Value Imputation, Box Cox Transformation 
+                                        </p>                                        
+                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="col mb-4">
-                                <div class="card shadow-sm text-black bg-light">
+                                <div class="card shadow text-black bg-light">
                                     <a href="./assets/YouTube View Prediction with Machine Learning.html" class="text-reset text-decoration-none"target="_blank">
                                         <img src="./images/youtube-views.png" class="card-img-top" alt="car_accidents.png" width="100%">
-                      
-                                        <div class="card-body">
-                                            <h6 class="card-title">YouTube View Prediction with Machine Learning</h6>
-                                            <p class="card-text fs-6">
-                                                油管视频播放量预测 <br> 
-                                                2020-03 <br>
-                                                Skill used: Python, <strong>Sklearn</strong>, <strong>Spark ML</strong>, Principal Component Analysis(PCA), Random Forest, seaborn 
-                                            </p>                                          
-                                        </div>
                                     </a>
+                                    <div class="card-body">
+                                        <h6 class="card-title"><b>YouTube View Prediction with Machine Learning</b></h6>
+                                        <p class="card-text ">
+                                            油管视频播放量预测 <br> 
+                                            2020-03 <br>
+                                            Skill used: Python, <strong>Sklearn</strong>, <strong>Spark ML</strong>, Principal Component Analysis(PCA), Random Forest, seaborn 
+                                        </p>                                          
+                                    </div>                                    
                                 </div>
                             </div>
                         </div>
 
 
                         <br>                        
-                        <h4 class="mt-5 mb-4">R</h4>
+                        <h4 class="mt-5 mb-4"><b>Machine Learning With R</b></h4>
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3"> 
                             <div class="col mb-4">
-                                <div class="card shadow-sm text-black bg-light">
+                                <div class="card shadow text-black bg-light">
                                     <a href="./assets/austin-urban-growth.html" class="text-reset text-decoration-none"target="_blank">
                                         <img src="./images/austin-development-potential-2020.png" class="card-img-top" alt="austin-development-potential-2020.png" width="100%">
-                      
-                                        <div class="card-body">
-                                            <h6 class="card-title">Austin Urban Growth Model</h6>
-                                            <p class="card-text fs-6">
-                                                奥斯汀城市增长模型<br> 
-                                                2020-05 <br>
-                                                Skill used: R, Spatial Lag, Logistic Regression, demand and supply analysis
-                                            </p>
-                                        </div>
-                                    </a>  
+                                    </a> 
+                                    <div class="card-body">
+                                        <h6 class="card-title"><b>Austin Urban Growth Model</b></h6>
+                                        <p class="card-text ">
+                                            奥斯汀城市增长模型<br> 
+                                            2020-05 <br>
+                                            Skill used: R, Spatial Lag, Logistic Regression, demand and supply analysis
+                                        </p>
+                                    </div>                                     
                                 </div>
                             </div>
                             <div class="col mb-4">
-                                <div class="card shadow-sm text-black bg-light">
+                                <div class="card shadow text-black bg-light">
                                     <a href="./assets/calgary-inundation-prediction.html" class="text-reset text-decoration-none"target="_blank">
                                         <img src="./images/calgary.png" class="card-img-top" alt="calgary.png" width="100%">
-                      
-                                        <div class="card-body">
-                                            <h6 class="card-title">Calgary Inundation Prediction</h6>
-                                            <p class="card-text fs-6">
-                                                卡尔加里洪涝区预测 <br> 
-                                                2020-03 <br>
-                                                Skill used: R, <strong>Supervised Classification of Satellite Imagery</strong>, Cross Validation
-                                            </p>
-                                        </div>
-                                    </a>  
+                                    </a> 
+                                    <div class="card-body">
+                                        <h6 class="card-title"><b>Calgary Inundation Prediction</b></h6>
+                                        <p class="card-text ">
+                                            卡尔加里洪涝区预测 <br> 
+                                            2020-03 <br>
+                                            Skill used: R, <strong>Supervised Classification of Satellite Imagery</strong>, Cross Validation
+                                        </p>
+                                    </div>                                     
                                 </div>
                             </div>
                             <div class="col mb-4">
-                                <div class="card shadow-sm text-black bg-light">
+                                <div class="card shadow text-black bg-light">
                                     <a href="./assets/Train Occupancy Prediction in Belgium.html" class="text-reset text-decoration-none"target="_blank">
                                         <img src="./images/frequent-lines.gif" class="card-img-top" alt="frequent-lines.gif" width="100%">
-                      
-                                        <div class="card-body">
-                                            <h6 class="card-title">Train Occupancy Prediction in Belgium (kaggle)</h6>
-                                            <p class="card-text fs-6">
-                                                比利时列车上座率预测 <br> 
-                                                2019-12 <br>
-                                                Skill used: R, Multinomial Logistic Regression, App Wireframe, Profit Optimization
-                                            </p>
-                                        </div>
                                     </a>  
+                                    <div class="card-body">
+                                        <h6 class="card-title"><b>Train Occupancy Prediction in Belgium (kaggle)</b></h6>
+                                        <p class="card-text ">
+                                            比利时列车上座率预测 <br> 
+                                            2019-12 <br>
+                                            Skill used: R, Multinomial Logistic Regression, App Wireframe, Profit Optimization
+                                        </p>
+                                    </div>                                    
                                 </div>
                             </div>                                                                                        
                             <div class="col mb-4">
-                                <div class="card shadow-sm text-black bg-light">
+                                <div class="card shadow text-black bg-light">
                                     <a href="./assets/INVESTIGATING THE RELATIONSHIP BETWEEN CRIME AND PUBLIC TRANSIT IN CHICAGO.pdf" class="text-reset text-decoration-none" target="_blank">
                                         <img src="./images/chicago-crime-transit.png" class="card-img-top" alt="network-game.png" width="100%">
-                      
-                                        <div class="card-body">
-                                            <h6 class="card-title">Investigating the Relationship Between Crime and Public Transit in Chicago</h6>
-                                            <p class="card-text fs-6">
-                                                芝加哥犯罪率与公共交通关联性研究 <br>
-                                                2019-12 <br> 
-                                                Skill used: R, Multiple Linear Regression 
-                                            </p>
-                                        </div>
-                                    </a>  
+                                    </a>
+                                    <div class="card-body">
+                                        <h6 class="card-title"><b>Investigating the Relationship Between Crime and Public Transit in Chicago</b></h6>
+                                        <p class="card-text ">
+                                            芝加哥犯罪率与公共交通关联性研究 <br>
+                                            2019-12 <br> 
+                                            Skill used: R, Multiple Linear Regression 
+                                        </p>
+                                    </div>                                      
                                 </div>
                             </div>
                             <div class="col mb-4">
-                                <div class="card shadow-sm text-black bg-light">
+                                <div class="card shadow text-black bg-light">
                                     <a href="./assets/HEDONIC HOME PRICE PREDICTION FOR SAN FRANCISCO.html" class="text-reset text-decoration-none" target="_blank">
                                         <img src="./images/sf-house-price.png" class="card-img-top" alt="network-game.png" width="100%">
-                      
-                                        <div class="card-body">
-                                            <h6 class="card-title">Hedonic Home Price Prediction For San Francisco</h6>
-                                            <p class="card-text fs-6">
-                                                旧金山效用估价法房价预测 <br> 
-                                                2019-10 <br>
-                                                Skill used: R, OLS Modeling, Spatial Lag 
-                                            </p>
-                                        </div>
                                     </a>  
+                                    <div class="card-body">
+                                        <h6 class="card-title"><b>Hedonic Home Price Prediction For San Francisco</b></h6>
+                                        <p class="card-text ">
+                                            旧金山效用估价法房价预测 <br> 
+                                            2019-10 <br>
+                                            Skill used: R, OLS Modeling, Spatial Lag 
+                                        </p>
+                                    </div>                                    
                                 </div>
                             </div>                          
                         </div>
@@ -151,143 +207,322 @@
 
 
                         <br>                        
-                        <h4 class="mt-5 mb-4">APP DEVELOPMENT</h4>
+                        <h4 class="mt-5 mb-4"><b>App Development</b></h4>
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3"> 
                             <div class="col mb-4">
-                                <div class="card shadow-sm text-black bg-light">
+                                <div class="card shadow text-black bg-light">
                                     <a href="https://github.com/MUSA-509/final-project-jingzong-ben" class="text-reset text-decoration-none"target="_blank">
                                         <img src="./images/bg-white.png" class="card-img-top" alt="bg-white.png" width="100%">
                                         <img src="./images/transit-app.gif" class="card-img-top" alt="transit-app.gif" width="100%">
                                         <img src="./images/bg-white.png" class="card-img-top" alt="bg-white.png" width="100%">
-
-                                        <div class="card-body">
-                                            <h6 class="card-title">Transit Ridership Dashboard During COVID-19 (Dynamic Web App)</h6>
-                                            <p class="card-text fs-6">
-                                                疫情期间公交载客量数据面板 <br>
-                                                2020-12 <br> 
-                                                Skill used: <strong>Javascript</strong>, Python, <strong>SQL</strong>, <strong>flask</strong>, plotly, BigQuery, AWS Elastic Beanstalk, HTML, Bootstrap  
-                                            </p>
-                                        </div>
-                                    </a>  
+                                    </a> 
+                                    <div class="card-body">
+                                        <h6 class="card-title"><b>Transit Ridership Dashboard During COVID-19 (Dynamic Web App)</b></h6>
+                                        <p class="card-text ">
+                                            疫情期间公交载客量数据面板 <br>
+                                            2020-12 <br> 
+                                            Skill used: <strong>Javascript</strong>, Python, <strong>SQL</strong>, <strong>flask</strong>, plotly, BigQuery, AWS Elastic Beanstalk, HTML, Bootstrap  
+                                        </p>
+                                    </div>                                     
                                 </div>
                             </div>
                             <div class="col mb-4">
-                                <div class="card shadow-sm text-black bg-light">
+                                <div class="card shadow text-black bg-light">
                                     <a href="./assets/network-game/network-game.html" class="text-reset text-decoration-none" target="_blank">
                                         <img src="./images/network-game-cover.gif" class="card-img-top" alt="network-game.png" width="100%">
-                      
-                                        <div class="card-body">
-                                            <h6 class="card-title">Network Game</h6>
-                                            <p class="card-text fs-6">
-                                                连子棋 <br> 
-                                                2020-10 <br>
-                                                Skill used: <strong>Java</strong>, Object-oriented Design, DFS, BFS, Game Tree Search and Pruning
-                                            </p>
-                                        </div>
-                                    </a>  
+                                    </a>
+                                    <div class="card-body">
+                                        <h6 class="card-title"><b>Network Game</b></h6>
+                                        <p class="card-text ">
+                                            连子棋 <br> 
+                                            2020-10 <br>
+                                            Skill used: <strong>Java</strong>, Object-oriented Design, DFS, BFS, Game Tree Search and Pruning
+                                        </p>
+                                    </div>                                      
                                 </div>
                             </div>
                             <div class="col mb-4">
-                                <div class="card shadow-sm text-black bg-light">
+                                <div class="card shadow text-black bg-light">
                                     <a href="./assets/dynamically-priced-curb-parking-simulation.html" class="text-reset text-decoration-none"target="_blank">
                                         <img src="./images/parking-cover.gif" class="card-img-top" alt="parking-cover.gif" width="100%">
-                      
-                                        <div class="card-body">
-                                            <h6 class="card-title">Dynamically-priced Curb Parking Simulation</h6>
-                                            <p class="card-text fs-6">
-                                                路边停车动态收费策略模拟研究 <br> 
-                                                2020-04 <br>
-                                                Skill used: <strong>Netlogo</strong> , Dynamic Programming, Agent-based Modeling
-                                            </p>
-                                        </div>
-                                    </a>  
+                                    </a> 
+                                    <div class="card-body">
+                                        <h6 class="card-title"><b>Dynamically-priced Curb Parking Simulation</b></h6>
+                                        <p class="card-text ">
+                                            路边停车动态收费策略模拟研究 <br> 
+                                            2020-04 <br>
+                                            Skill used: <strong>Netlogo</strong> , Dynamic Programming, Agent-based Modeling
+                                        </p>
+                                    </div>                                     
                                 </div>
                             </div>                             
                         </div>
 
-
-
                         <br>                        
-                        <h4 class="mt-5 mb-4">GIS</h4>
+                        <h4 class="mt-5 mb-4"><b>GIS Solutions</b></h4>
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3"> 
                             <div class="col mb-4">
-                                <div class="card shadow-sm text-black bg-light">
+                                <div class="card shadow text-black bg-light">
                                     <a href="https://github.com/JingzongWang/Arcpy-network-partitioning" class="text-reset text-decoration-none"target="_blank">
                                         <img src="./images/network-partitioning.png" class="card-img-top" alt="network-partitioning.png" width="100%">
-                      
-                                        <div class="card-body">
-                                            <h6 class="card-title">ArcPro Road Network Partitioning Tools</h6>
-                                            <p class="card-text fs-6">
-                                                ArcPro路网分区工具 <br> 
-                                                2020-12 <br>
-                                                Skill used: ArcPro, <strong>ArcPy</strong>, Network Analysis, Dynamic Programming, Agent-based Modeling
-                                            </p>
-                                        </div>
-                                    </a>  
+                                    </a> 
+                                    <div class="card-body">
+                                        <h6 class="card-title"><b>ArcPro Road Network Partitioning Tools</b></h6>
+                                        <p class="card-text ">
+                                            ArcPro路网分区工具 <br> 
+                                            2020-12 <br>
+                                            Skill used: ArcPro, <strong>ArcPy</strong>, Network Analysis, Dynamic Programming, Agent-based Modeling
+                                        </p>
+                                    </div>                                     
                                 </div>
                             </div>
                             <div class="col mb-4">
-                                <div class="card shadow-sm text-black bg-light">
+                                <div class="card shadow text-black bg-light">
                                     <a href="./assets/New IndeGo Stations Allocation.pdf" class="text-reset text-decoration-none"target="_blank">
                                         <img src="./images/indego-station-allocation.png" class="card-img-top" alt="indego-station-allocation.png" width="100%">
-                      
-                                        <div class="card-body">
-                                            <h6 class="card-title">New IndeGo Stations Allocation</h6>
-                                            <p class="card-text fs-6">
-                                                IndeGo共享单车新站点选址 <br> 
-                                                2019-12 <br>
-                                                Skill used: ArcGIS, Model Building, Demand/Supply Gap Analysis
-                                            </p>
-                                        </div>
-                                    </a>  
+                                    </a> 
+                                    <div class="card-body">
+                                        <h6 class="card-title"><b>New IndeGo Stations Allocation</b></h6>
+                                        <p class="card-text ">
+                                            IndeGo共享单车新站点选址 <br> 
+                                            2019-12 <br>
+                                            Skill used: ArcGIS, Model Building, Demand/Supply Gap Analysis
+                                        </p>
+                                    </div>                                     
                                 </div>
                             </div>
                         </div>
                         
 
                         <br>                        
-                        <h4 class="mt-5 mb-4">WRITITNGS</h4>
+                        <h4 class="mt-5 mb-4"><b>Writtings</b></h4>
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">    
                             <div class="col mb-4">
-                                <div class="card shadow-sm text-black bg-light">
+                                <div class="card shadow text-black bg-light">
                                     <a href="./assets/TRAFFIC CONGESTION’S ECONOMIC IMPACTS.pdf" class="text-reset text-decoration-none"target="_blank">
                                         <img src="./images/congestion.jpg" class="card-img-top" alt="congestion.jpg" width="100%">
-                    
-                                        <div class="card-body">
-                                            <h6 class="card-title">TRAFFIC CONGESTION’S ECONOMIC IMPACTS (Literature review)</h6>
-                                            <p class="card-text fs-6">
-                                                交通拥堵的经济影响（文献综述） <br> 
-                                                2019-12 <br>
-                                            </p>
-                                        </div>
-                                    </a>  
+                                    </a> 
+                                    <div class="card-body">
+                                        <h6 class="card-title"><b>TRAFFIC CONGESTION’S ECONOMIC IMPACTS (Literature review)</b></h6>
+                                        <p class="card-text ">
+                                            交通拥堵的经济影响（文献综述） <br> 
+                                            2019-12 <br>
+                                        </p>
+                                    </div>                                     
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div> 
             </div>
+            <div class="placeholder">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+            
+            <svg class="background" width="1400" height="800">
+                <g class="links"></g>
+                <g class="nodes"></g>
+            </svg>
 
-            <div class="row py-lg-5">
+            <div class="row mt-5 pt-lg-5">
+                <div class="col-lg-9 col-md-12 mx-auto" >
+                    <div class="row align-items-center">
+                        <img class="col-4" src="./images/jingzong.png" alt="Jingzong.png" width = 250px >
+                        <span class="col-1"></span>
+                        <p class="col-7 about" >A graduate student in city planning at University of Pennsylvania. <br> A tech-driven data analyst, planner, and developer. <br> Skilled in using data, geospatial technologies and development methodologies to faciliate public policymaking and business development.</p>
+                    </div>
+                </div>   
+            </div> 
+
+            <div class="placeholder">
+                <br><br><br><br><br>
+            </div>
+
+            <div class="row mt-5 pt-lg-5">
                 <footer class="col-lg-9 col-md-12 mx-auto" >
                     <div class="d-flex justify-content-between">
                         <p >© Jingzong Wang 2020</p>
                         <p >
-                            Follow: <a href="https://www.linkedin.com/in/jingzong-wang/">LinkedIn</a><span> / </span><a href="https://github.com/JingzongWang">Github</a> </p> 
-                        <p >
-                            Email: <a href="jingzong@upenn.edu">jingzong@upenn.edu</a>
+                            Connect: <a class="text-decoration-none" href="https://www.linkedin.com/in/jingzong-wang/">LinkedIn</a><span> / </span><a class="text-decoration-none" href="https://github.com/JingzongWang">Github</a><span> / </span><a class="text-decoration-none" href="jingzong@upenn.edu">jingzong@upenn.edu</a>
                         </p>   
                     </div>
                 </footer>   
             </div>            
             
-            <script>
-                (function(){
-                    let images = document.querySelectorAll(".item-thumb");
-                    lazyload(images)
-                    // lazyload();
-                })();
+            <script>  
+                let width = d3.select("svg").attr("width");
+                let height = d3.select("svg").attr("height");
+                let radius = 50;     
+                let nodes = [
+                    {name: 'JavaScript', size: 3},
+                    {name: 'Web', size: 2},
+                    {name: 'HTML', size: 2},
+                    {name: 'CSS', size: 2},
+                    {name: 'Bootstrap', size: 1},
+                    {name: 'jQuery', size: 2},
+                    {name: 'D3.js', size: 1},
+                    {name: 'NodeJS', size: 2},
+                    {name: 'NPM', size: 1},
+                    {name: 'JSON', size: 1},
+                    {name: 'Mapbox', size: 1},
+                    {name: 'Server', size: 2},
+                    {name: 'Elastic Beanstalk', size: 1},
+                    {name: 'Python', size: 3},
+                    {name: 'Flask', size: 1},
+                    {name: 'Sklearn', size: 2},
+                    {name: 'Spark', size: 2},
+                    {name: 'Machine Learning', size: 3},
+                    {name: 'Neural Networks', size: 2},
+                    {name: 'R', size: 3},
+                    {name: 'GeoJSON', size: 1},
+                    {name: 'GIS', size: 3},
+                    {name: 'ArcGIS', size: 2},
+                    {name: 'ArcPy', size: 2},
+                    {name: 'Google Earth Engine', size: 1},
+                    {name: 'PostGIS', size: 2},
+                    {name: 'PostgreSQL', size: 3},
+                    {name: 'RDBMS', size: 2},
+                    {name: 'Google Big Query', size: 1},
+                    {name: 'Database', size: 2},
+                    {name: 'NoSQL', size: 2},
+                    {name: 'MongoDB', size: 1},
+                    {name: 'Urban Planning', size: 3},
+                    {name: 'Smart City', size: 2},
+                    {name: 'Transportation Planning', size: 2},
+                    {name: 'Urban Design', size: 2},
+                    {name: 'Git', size: 2},
+                    {name: 'Java', size: 3},
+                    {name: 'Object-oreinted design', size: 2},
+                    {name: 'Adobe Creative Suite', size: 2}
+                ]            
+                let xScale = d3.scaleLinear().domain([0,40]).range([0, 1000]);
+                let links = [
+                    {source: 0, target: 1},
+                    {source: 1, target: 2},
+                    {source: 1, target: 3},
+                    {source: 2, target: 4},
+                    {source: 3, target: 4},
+                    {source: 0, target: 5},
+                    {source: 0, target: 6},
+                    {source: 0, target: 7},
+                    {source: 0, target: 8},
+                    {source: 0, target: 9},
+                    {source: 0, target: 10},
+                    {source: 0, target: 11},
+                    {source: 11, target: 12},
+                    {source: 13, target: 14},
+                    {source: 14, target: 11},
+                    {source: 13, target: 15},
+                    {source: 13, target: 16},
+                    {source: 15, target: 17},
+                    {source: 16, target: 17},
+                    {source: 17, target: 18},
+                    {source: 19, target: 17},
+                    {source: 9, target: 20},
+                    {source: 21, target: 20},
+                    {source: 21, target: 22},
+                    {source: 22, target: 23},
+                    {source: 13, target: 23},
+                    {source: 21, target: 24},
+                    {source: 0, target: 24},
+                    {source: 26, target: 25},
+                    {source: 27, target: 26},
+                    {source: 27, target: 28},
+                    {source: 21, target: 28},
+                    {source: 21, target: 25},
+                    {source: 29, target: 27},
+                    {source: 29, target: 30},
+                    {source: 30, target: 31},
+                    {source: 32, target: 33},
+                    {source: 32, target: 34},
+                    {source: 32, target: 35},
+                    {source: 37, target: 38},
+                    {source: 32, target: 21},
+                    {source: 32, target: 17},
+                    {source: 32, target: 39},
+                ]
+
+                var simulation = d3.forceSimulation(nodes)
+                    .force('charge', d3.forceManyBody().strength(-150))
+                    .force('center', d3.forceCenter(width / 2.5, height / 2))
+                    .force('link', d3.forceLink().links(links).distance(95))
+                    .force('x', d3.forceX().x(function(d) {
+                        return xScale(d.index);
+                    }))
+                    .on('tick', ticked);            
+
+
+                    
+                
+
+                function updateLinks() {
+                    let u = d3.select('.links')
+                        .selectAll('line')
+                        .data(links)
+                    u.enter()
+                        .append('line')
+                        .merge(u)
+                        .attr('x1', function(d) {
+                        return d.source.x
+                        })
+                        .attr('y1', function(d) {
+                        return d.source.y
+                        })
+                        .attr('x2', function(d) {
+                        return d.target.x
+                        })
+                        .attr('y2', function(d) {
+                        return d.target.y
+                        })
+
+                    u.exit().remove()
+                }
+
+                function updateNodes() {
+                    u = d3.select('.nodes')
+                        .selectAll('text')
+                        .data(nodes)
+
+                    u.enter()
+                        .append('text')
+                        .text(function(d) {
+                            return d.name;
+                        })
+                        .style("font-size", function(d) {
+                            return (d.size * 5 + 10);
+                        })
+                        .merge(u)
+                        .attr('x', function(d) {
+                        return d.x = Math.max(radius, Math.min(width - radius, d.x));
+                        })
+                        .attr('y', function(d) {
+                        return d.y = Math.max(radius, Math.min(height - radius, d.y));
+                        })
+                        .attr('dy', function(d) {
+                        return 5
+                        })
+
+                    u.exit().remove()
+                }
+
+                function ticked() {
+                    updateLinks()
+                    updateNodes()
+                }
+
+                window.onscroll = function(ev) {
+                    let y = document.body.offsetHeight - window.innerHeight - window.scrollY;
+                    if (y < (1000 + window.innerHeight) && y > window.innerHeight) {
+                        document.querySelector('svg').style.opacity = 1 - ((y - window.innerHeight) / 1000 * 0.9);
+                    }
+                    if (y <= window.innerHeight) {
+                        document.querySelector('svg').style.opacity = (y + 50) / window.innerHeight;
+                    }
+                };                   
+
             </script>
+
+            
 
         </main>      
 
