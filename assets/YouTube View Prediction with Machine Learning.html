@@ -13077,9 +13077,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="YouTube-View-Prediction-with-Machine-Learning">YouTube View Prediction with Machine Learning<a class="anchor-link" href="#YouTube-View-Prediction-with-Machine-Learning">&#182;</a></h1><p><em>Jingzong Wang</em>
-2020-03
-CIS-545 HW4</p>
+<h1 id="YouTube-View-Prediction-with-Machine-Learning">YouTube View Prediction with Machine Learning<a class="anchor-link" href="#YouTube-View-Prediction-with-Machine-Learning">&#182;</a></h1><p><em>Jingzong Wang</em></p>
+<p>2020-03</p>
 
 </div>
 </div>
@@ -15224,18 +15223,17 @@ GGNC1P8Pr2S4Uk2YP/QAAAAASUVORK5CYII=
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="1.2.4:-Comparing-views,-likes,-dislikes-against-categories">1.2.4: Comparing views, likes, dislikes against categories<a class="anchor-link" href="#1.2.4:-Comparing-views,-likes,-dislikes-against-categories">&#182;</a></h4><p>As a next step, try to gain insights into the data using categories, views, likes and dislikes.</p>
-<p>Draw three plots:</p>
-<p>1.) How many videos are there for each category?</p>
-<p>2.) What is the distribution of category against views? (Use boxplot and views on log scale)</p>
-<p>3.) What is the distribution of dislikes against views? (Use boxplot and dislikes on log scale)</p>
-<p>For extra credit:
-You can try to gain more insights into the dataset by drawing interesting plots. Some ideas include:</p>
-<ul>
-<li>How long does a video trend in a country? </li>
-<li>What are some videos which got popular because they were disliked? </li>
-</ul>
-<p>Think of such interesting things and add here. We will award points based on creativity of the insights that you get.</p>
+<h4 id="1.2.4:-Comparing-views,-likes,-dislikes-against-categories">1.2.4: Comparing views, likes, dislikes against categories<a class="anchor-link" href="#1.2.4:-Comparing-views,-likes,-dislikes-against-categories">&#182;</a></h4><p>As a next step, we try to gain insights into the data using categories, views, likes and dislikes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Number of videos for each category</li>
+</ol>
 
 </div>
 </div>
@@ -15916,6 +15914,16 @@ k7Oy0RICAAAAAElFTkSuQmCC
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>The distribution of category against views</li>
+</ol>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[0]:</div>
@@ -16484,6 +16492,16 @@ RRLQCQkJCXWKJKATEhIS6hRJQCckJCTUKZKATkhISKhT/D9HGopZgVxz0gAAAABJRU5ErkJggg==
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>The distribution of dislikes against views</li>
+</ol>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -17804,7 +17822,8 @@ AgAREZEQ+v8B/tpVqaLkwXoAAAAASUVORK5CYII=
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Step-1:-Use-Principal-component-analysis-to-reduce-number-of-dimensions-of-the-dataset,-as-a-first-step-fit-a-pca-model-on-your-train-set-and-then-plot-the-explained_variance_ratio-against-the-number-of-components-to-decide-the-number-of-components-you-should-keep.-(3-pts)">Step 1: Use Principal component analysis to reduce number of dimensions of the dataset, as a first step fit a pca model on your train set and then plot the explained_variance_ratio against the number of components to decide the number of components you should keep. (3 pts)<a class="anchor-link" href="#Step-1:-Use-Principal-component-analysis-to-reduce-number-of-dimensions-of-the-dataset,-as-a-first-step-fit-a-pca-model-on-your-train-set-and-then-plot-the-explained_variance_ratio-against-the-number-of-components-to-decide-the-number-of-components-you-should-keep.-(3-pts)">&#182;</a></h5>
+<p>Use Principal component analysis to reduce number of dimensions of the dataset</p>
+
 </div>
 </div>
 </div>
@@ -17922,33 +17941,13 @@ AgAREZEQ+v8B/tpVqaLkwXoAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Correct! You earned 10/10 points. You are a star!
-
-Your submission has been successfully recorded in the gradebook.
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -18297,8 +18296,7 @@ only showing top 20 rows
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now we will create a pipeline with many stages. For this data, we just need a single stage with the assembler, but you could have other stages before that where you perform operations on the data like converting categorical strings in the features to numeric values, or do feature scaling operations.</p>
-<p>In this step, we will create a pipeline with a single stage - the assembler. Fit the pipeline to your data and create the transformed dataframe and name it 'modified_data_sdf'.</p>
+<p>In this step, we will create a pipeline with a single stage - the assembler.</p>
 
 </div>
 </div>
@@ -18392,8 +18390,7 @@ only showing top 20 rows
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.2-Linear-regression-using-Spark-ML">2.2 Linear regression using Spark ML<a class="anchor-link" href="#2.2-Linear-regression-using-Spark-ML">&#182;</a></h3><p>Time to do the cool stuff, let's train a linear regression model to our data and try to predict the views again! This time, we will use "Big" data tools. Using Spark ML's linear regression, create a model, fit the training data. We will then see the summary stats for the model - the RMSE error, R2 score and other information you find useful. Look up the documentation online and try to understand how to implement this.</p>
-<p>Firstly, train a model without any regularization!</p>
+<h3 id="2.2-Linear-regression-using-Spark-ML">2.2 Linear regression using Spark ML<a class="anchor-link" href="#2.2-Linear-regression-using-Spark-ML">&#182;</a></h3><p>Using Spark ML's linear regression to Train a linear regression model and try to predict the views.</p>
 
 </div>
 </div>
@@ -18449,14 +18446,6 @@ r2: 0.865483
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Now, find out how good the model actually is and see if it overfits the training data. Predict the views for your test data (hint: it is called 'transform' in spark ml) and evaluate the performance using 'RegressionEvaluator' object in the Spark ML Regression library. Your prediction column should be named 'prediction'.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
