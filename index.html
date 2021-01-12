@@ -102,8 +102,7 @@
                                             2020-05 <br>
                                             Skill used: Python, <strong>Sklearn</strong>, Random Forest, Frequency Encoding, One-hot Encoding, Value Imputation, Box Cox Transformation 
                                         </p>                                        
-                                    </div>
-                                    
+                                    </div>                                    
                                 </div>
                             </div>
                             <div class="col mb-4">
@@ -122,8 +121,6 @@
                                 </div>
                             </div>
                         </div>
-
-
                         <br>                        
                         <h4 class="mt-5 mb-4"><b>Machine Learning With R</b></h4>
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3"> 
@@ -171,7 +168,7 @@
                                         </p>
                                     </div>                                    
                                 </div>
-                            </div>                                                                                        
+                            </div>
                             <div class="col mb-4">
                                 <div class="card shadow text-black bg-light">
                                     <a href="./assets/INVESTIGATING THE RELATIONSHIP BETWEEN CRIME AND PUBLIC TRANSIT IN CHICAGO.pdf" class="text-reset text-decoration-none" target="_blank">
@@ -203,9 +200,6 @@
                                 </div>
                             </div>                          
                         </div>
-
-
-
                         <br>                        
                         <h4 class="mt-5 mb-4"><b>App Development</b></h4>
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3"> 
@@ -228,21 +222,6 @@
                             </div>
                             <div class="col mb-4">
                                 <div class="card shadow text-black bg-light">
-                                    <a href="./assets/network-game/network-game.html" class="text-reset text-decoration-none" target="_blank">
-                                        <img src="./images/network-game-cover.gif" class="card-img-top" alt="network-game.png" width="100%">
-                                    </a>
-                                    <div class="card-body">
-                                        <h6 class="card-title"><b>Network Game</b></h6>
-                                        <p class="card-text ">
-                                            连子棋 <br> 
-                                            2020-10 <br>
-                                            Skill used: <strong>Java</strong>, Object-oriented Design, DFS, BFS, Game Tree Search and Pruning
-                                        </p>
-                                    </div>                                      
-                                </div>
-                            </div>
-                            <div class="col mb-4">
-                                <div class="card shadow text-black bg-light">
                                     <a href="./assets/dynamically-priced-curb-parking-simulation.html" class="text-reset text-decoration-none"target="_blank">
                                         <img src="./images/parking-cover.gif" class="card-img-top" alt="parking-cover.gif" width="100%">
                                     </a> 
@@ -255,7 +234,22 @@
                                         </p>
                                     </div>                                     
                                 </div>
-                            </div>                             
+                            </div> 
+                            <div class="col mb-4">
+                                <div class="card shadow text-black bg-light">
+                                    <a href="./assets/network-game/network-game.html" class="text-reset text-decoration-none" target="_blank">
+                                        <img src="./images/network-game-cover.gif" class="card-img-top" alt="network-game.png" width="100%">
+                                    </a>
+                                    <div class="card-body">
+                                        <h6 class="card-title"><b>Network Game</b></h6>
+                                        <p class="card-text ">
+                                            连子棋 <br> 
+                                            2020-10 <br>
+                                            Skill used: <strong>Java</strong>, Object-oriented Design, DFS, BFS, Game Tree Search and Pruning
+                                        </p>
+                                    </div>                                      
+                                </div>
+                            </div>                                                        
                         </div>
 
                         <br>                        
@@ -291,8 +285,7 @@
                                     </div>                                     
                                 </div>
                             </div>
-                        </div>
-                        
+                        </div>                        
 
                         <br>                        
                         <h4 class="mt-5 mb-4"><b>Writtings</b></h4>
@@ -329,7 +322,7 @@
                     <div class="row align-items-center">
                         <img class="col-4" src="./images/jingzong.png" alt="Jingzong.png" width = 250px >
                         <span class="col-1"></span>
-                        <p class="col-7 about" >A graduate student in city planning at University of Pennsylvania. <br> A tech-driven data analyst, planner, and developer. <br> Skilled in using data, geospatial technologies and development methodologies to faciliate public policymaking and business development.</p>
+                        <p class="col-7 about" >A graduate student in city planning at the University of Pennsylvania. <br> A tech-driven data analyst, planner, and developer. <br> Skilled in using data, geospatial technologies, and development methodologies to facilitate public policymaking and business development.</p>
                     </div>
                 </div>   
             </div> 
@@ -393,7 +386,12 @@
                     {name: 'Git', size: 2},
                     {name: 'Java', size: 3},
                     {name: 'Object-oreinted design', size: 2},
-                    {name: 'Adobe Creative Suite', size: 2}
+                    {name: 'Adobe Creative Suite', size: 1},
+                    {name: 'Travel Demand Modeling', size: 1},
+                    {name: 'VISUM', size: 1},
+                    {name: 'VISSIM', size: 1},
+                    {name: 'Complete Street Design', size: 1}
+
                 ]            
                 let xScale = d3.scaleLinear().domain([0,40]).range([0, 1000]);
                 let links = [
@@ -440,6 +438,10 @@
                     {source: 32, target: 21},
                     {source: 32, target: 17},
                     {source: 32, target: 39},
+                    {source: 34, target: 40},
+                    {source: 34, target: 41},
+                    {source: 34, target: 42},
+                    {source: 34, target: 43}
                 ]
 
                 var simulation = d3.forceSimulation(nodes)
